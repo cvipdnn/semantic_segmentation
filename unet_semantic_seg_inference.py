@@ -60,7 +60,7 @@ def getImage(imageObj, input_image_size):
 
 
 model = unet_model(input_image_size[0], input_image_size[1], n_class)
-model.load_weights('./model/best.h5')
+model.load_weights('./model/pretrained.h5')
 model.summary()
 
 dataDir='/home/cvip/deep_learning/datasets/coco'
@@ -95,3 +95,4 @@ for index in range(64):
     plt.imshow(label[0,:,:,1])
 
 plt.show()
+
