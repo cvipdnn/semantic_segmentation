@@ -29,5 +29,5 @@ The testing set used for inference is test2017. Some results are shown below:
 
 ## References
 1)https://towardsdatascience.com/master-the-coco-dataset-for-semantic-image-segmentation-part-1-of-2-732712631047
-2)https://www.tensorflow.org/tutorials/images/segmentation 
+2)https://www.tensorflow.org/tutorials/images/segmentation
 3)https://cocodataset.org/#download
