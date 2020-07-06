@@ -6,9 +6,9 @@ The dataset I used was coco2017.
 ## Getting Started
 
 ### Prerequisites
-*Keras 2.4.3
-*Tensorflow 2.2.0
-*Opencv for python
+* Keras 2.4.3
+* Tensorflow 2.2.0
+* Opencv for python
 
 
 ## Usage via command line
