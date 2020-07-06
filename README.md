@@ -1,11 +1,25 @@
-# Semantic_segmentation
+### Semantic_segmentation
 This repo gives the sample code to implement semantic segmenation (people segmentation) using unet + mobilenetv2.
 The dataset I used was coco2017. 
 
-### Training Stats
+### Getting Started
+Prerequisites
+    Keras 2.4.3
+    Tensorflow 2.2.0
+    opencv for python
+
+
+### Usage via command line
+
+## Training the Model 
+python unet_semantic_seg_train.py
+
+# Training Stats
 The training set is train2017 and validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
 
-### Inferences
+## Inferences
+python unet_semantic_seg_inference.py
+
 The testing set is test2017. 
 ![](result.png)
 
