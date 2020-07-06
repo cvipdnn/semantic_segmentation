@@ -8,6 +8,7 @@ The dataset I used was coco2017.
 ### Prerequisites
 * Keras 2.4.3
 * Tensorflow 2.2.0
+* Coco API
 * Opencv for python
 
 
