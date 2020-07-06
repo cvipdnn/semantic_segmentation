@@ -2,6 +2,7 @@
 This repo shows a sample code to implement semantic segmenation (people segmentation) using unet + mobilenetv2.
 The dataset I used was coco2017. 
 
+
 ## Getting Started
 Prerequisites
     Keras 2.4.3
