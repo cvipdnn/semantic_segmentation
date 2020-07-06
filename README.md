@@ -1,5 +1,5 @@
-# Semantic_segmentation
-This repo gives the sample code to implement semantic segmenation (people segmentation) using unet + mobilenetv2.
+# Semantic_Segmentation
+This repo shows a sample code to implement semantic segmenation (people segmentation) using unet + mobilenetv2.
 The dataset I used was coco2017. 
 
 ## Getting Started
@@ -17,10 +17,10 @@ python unet_semantic_seg_train.py
     ## Training Stats
 The training set is train2017 and validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
 
-## Inferences
+### Inferences
 python unet_semantic_seg_inference.py
 
-The testing set is test2017. 
+The testing set is test2017. Some results are shown below:  
 ![](result.png)
 
 
