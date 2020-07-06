@@ -165,7 +165,7 @@ def visualizeGenerator(gen):
 
 
 model = unet_model(input_image_size[0], input_image_size[1], n_class)
-model.load_weights('./model/best.h5')
+model.load_weights('./model/pretrained.h5')
 model.summary()
 
 def create_image_generator(dataType):
