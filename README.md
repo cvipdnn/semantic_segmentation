@@ -18,7 +18,7 @@ The dataset I used was coco2017.
 python unet_semantic_seg_train.py
 
 ### Training Stats
-The training set is train2017 and the validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
+The training set is coco/train2017 and the validation set is coco/val2017. The pretained model under model is getting 96.22% accuracy for training set and 92.54% accuracy for validation set. 
 
 ### Inference
 python unet_semantic_seg_inference.py
@@ -30,3 +30,4 @@ The testing set used for inference is test2017. Some results are shown below:
 ## References
 1)https://towardsdatascience.com/master-the-coco-dataset-for-semantic-image-segmentation-part-1-of-2-732712631047
 2)https://www.tensorflow.org/tutorials/images/segmentation 
+3)https://cocodataset.org/#download
