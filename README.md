@@ -19,7 +19,7 @@ python unet_semantic_seg_train.py
 ### Training Stats
 The training set is train2017 and validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
 
-### Inferences
+### Inference
 python unet_semantic_seg_inference.py
 
 The testing set used for inference is test2017. Some results are shown below:  
