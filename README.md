@@ -17,7 +17,7 @@ The dataset I used was coco2017.
 python unet_semantic_seg_train.py
 
 ### Training Stats
-The training set is train2017 and validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
+The training set is train2017 and the validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
 
 ### Inference
 python unet_semantic_seg_inference.py
