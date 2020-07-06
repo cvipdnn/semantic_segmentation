@@ -6,7 +6,7 @@ The dataset I used was coco2017.
 Prerequisites
     Keras 2.4.3
     Tensorflow 2.2.0
-    opencv for python
+    Opencv for python
 
 
 ## Usage via command line
@@ -14,13 +14,13 @@ Prerequisites
 ### Training the Model 
 python unet_semantic_seg_train.py
 
-    ## Training Stats
+### Training Stats
 The training set is train2017 and validation set is val2017. The pretained model under model is getting 96.2% accuracy for training set. 
 
 ### Inferences
 python unet_semantic_seg_inference.py
 
-The testing set is test2017. Some results are shown below:  
+The testing set used for inference is test2017. Some results are shown below:  
 ![](result.png)
 
 
