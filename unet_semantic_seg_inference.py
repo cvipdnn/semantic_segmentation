@@ -92,7 +92,8 @@ for index in range(64):
     plt.subplot(8,16,r* 32 + c+16+1)
     plt.axis('off')
 
-    plt.imshow(label[0,:,:,1])
+    plt.imshow(label[0,:,:,1], cmap='gray')
+
 
 plt.show()
 
