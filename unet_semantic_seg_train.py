@@ -82,7 +82,7 @@ def getMask(imageObj, classes, coco, catIds, input_image_size):
 
 
 def calSamplenum(images, classes, coco, batch_size=4, folder=''):
-    image_size = len(images)
+    num_images = len(images)
     catIds = coco.getCatIds(catNms=classes)
 
     c = 0
@@ -103,7 +103,7 @@ def calSamplenum(images, classes, coco, batch_size=4, folder=''):
 
 
         c += batch_size
-        if (c + batch_size >= image_size):
+        if (c + batch_size >= num_images):
             break
     return num_background, num_foreground
 
@@ -111,7 +111,7 @@ def calSamplenum(images, classes, coco, batch_size=4, folder=''):
 
 def imageGeneratorCoco(images, classes, coco,batch_size=4, folder=''):
     
-    image_size = len(images)
+    num_images = len(images)
     catIds = coco.getCatIds(catNms=classes)
     
     c = 0
@@ -135,7 +135,7 @@ def imageGeneratorCoco(images, classes, coco,batch_size=4, folder=''):
             mask[i-c] = train_mask
             
         c = c + batch_size
-        if(c + batch_size >= image_size):
+        if(c + batch_size >= num_images):
             c=0
             random.shuffle(images)
 
