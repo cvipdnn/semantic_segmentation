@@ -77,7 +77,7 @@ for diritem in dirlist:
 
 # test this first sixty-four images
 total_num_images = 64
-
+plt.subplots(tight_layout=True)
 for index in range(64):
     # inference only
     normalized_img, raw_img = getImage(images[index], input_image_size)
@@ -91,7 +91,7 @@ for index in range(64):
     plt.imshow(raw_img)
     plt.subplot(8,16,r* 32 + c+16+1)
     plt.axis('off')
-
+    plt.gray()
     plt.imshow(label[0,:,:,1])
 
 plt.show()
