@@ -250,17 +250,26 @@ def accuracy_ignoring_zerolabel(y_true, y_pred):
 
     return n_matched_nonzero_labels/ n_nonzero_labels
 
+
+
 def w_categorical_crossentropy(weights):
 
-        
     def loss(y_true, y_pred):
-  
         # avoid log(0) and log(1)
+        y_pred = K.reshape(y_pred, (-1, n_class))
+        y_true = K.reshape(y_true, (-1, n_class))
+
+        nonzero_labels = K.sum(y_true, axis=1)
+
+        nonzero_labels = K.greater(nonzero_labels, 0)
+
+        n_nonzero_labels = K.sum(tf.cast(nonzero_labels, tf.float32))
+        
         y_pred = K.clip(y_pred, K.epsilon(), 1 - K.epsilon() )
 
-        loss = y_true * K.log(y_pred) * weights
-        loss = -K.sum(loss, -1)
-        return loss
+        loss1 = y_true * K.log(y_pred) * weights
+        loss1 = -K.sum(loss1, axis=None)/n_nonzero_labels
+        return loss1
     
     return loss
 
